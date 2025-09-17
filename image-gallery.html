@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        padding: 0px 16px 16px 16px;
+        max-width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        text-align: center;
+      }
+      .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        margin-top: 20px;
+        max-width: 600px;
+        transition: 0.3s ease;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        max-width: 200px;
+      }
+      .profile-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
+      .image-gallery a:hover img {
+        transform: scale(1.1); /* Enlarge the image on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <img
+        src="./assets/profile.jpg"
+        alt="My Profile Pcture"
+        class="profile-picture"
+      />
+      <h1>Saahil Shahzad</h1>
+      <nav>
+        <a href="home.html">Home</a> |
+        <a href="personal-skills.html">Personal Skills</a> |
+        <a href="hobbies.html">Hobbies</a> |
+        <a href="image-gallery.html">Image Gallery</a> |
+        <a href="contact-me.html">Contact Me</a>
+      </nav>
+      <div class="card">
+        <h2>Courses and Certifications</h2>
+        <div class="image-gallery">
+          <a href="./assets/img1.png" target="_blank">
+            <img src="./assets/img1.png" />
+          </a>
+          <a href="./assets/img2.png" target="_blank">
+            <img src="./assets/img2.png" />
+          </a>
+          <a href="./assets/img3.png" target="_blank">
+            <img src="./assets/img3.png" />
+          </a>
+          <a href="./assets/img4.png" target="_blank">
+            <img src="./assets/img4.png" />
+          </a>
+          <a href="./assets/img5.jpg" target="_blank">
+            <img src="./assets/img5.jpg" />
+          </a>
+          <a href="./assets/img6.jpg" target="_blank">
+            <img src="./assets/img6.jpg" />
+          </a>
+          <a href="./assets/img7.png" target="_blank">
+            <img src="./assets/img7.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
