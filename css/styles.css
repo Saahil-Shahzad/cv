@@ -1,4 +1,4 @@
-body {
+/* body {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -80,4 +80,131 @@ ul {
 .skills-list {
   column-count: 6;
   column-gap: 50px;
+} */
+
+/* I did it earlier with flexbox, I did not want to remove it so I just commented it out.
+  And below is the new CSS with float and clear */
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #101116;
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  text-align: center;
+  width: 100%;
+  clear: both;
+}
+
+p,
+h1,
+h2,
+ul,
+a {
+  color: #ff0055;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 0px 16px 16px 16px;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-align: center;
+  background-color: #1e040d;
+  border-color: #ff0055;
+  float: none;
+  width: 60%;
+}
+
+.profile-picture {
+  width: 110px;
+  height: 110px;
+  border-radius: 100px;
+  border: 3px solid #1e040d;
+  outline: 2px solid #ff0055;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-gallery {
+  margin: 20px auto;
+  max-width: 800px;
+  clear: both;
+  text-align: center;
+}
+
+.image-gallery a {
+  float: left;
+  width: 180px;
+  margin: 10px;
+  text-align: center;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.image-gallery a:hover img {
+  transform: scale(1.1);
+}
+
+ul {
+  text-align: left;
+  list-style-type: circle;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 16px;
+}
+
+.skills-list {
+  column-count: 6;
+  column-gap: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+nav {
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #1e040d;
+  border: 2px solid #ff0055;
+  border-radius: 25px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  color: #ff0055;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+  color: white;
+  border-bottom: 2px solid #ff0055;
 }
